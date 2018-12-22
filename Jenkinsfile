@@ -6,12 +6,17 @@ pipeline {
                 echo 'Check Out'
             }
         }
-        stage('Gradle Run') {
+        stage('Build Run') {
             steps {
                 echo 'Gradle Run'
             }
         }
 
+        stage('Test Run') {
+            steps {
+                echo 'Test Run'
+            }
+        
         stage('Docker Build') {
             steps {
                 echo 'Docker Build'
