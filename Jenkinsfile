@@ -16,6 +16,7 @@ pipeline {
             steps {
                 echo 'Test Run'
             }
+        }
         
         stage('Docker Build') {
             steps {
